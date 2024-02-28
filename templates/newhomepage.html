@@ -1,0 +1,53 @@
+{% extends 'Navbar.html' %}
+{% load static %}
+
+<html lang="en">
+
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div align="center" class="col">
+      <br><br><br><br><br><br>
+      <img src="https://th.bing.com/th/id/R.e3a9059d464118cb8bd7505f984090dd?rik=0NOOc0K0XSvwGA&riu=http%3a%2f%2f4.bp.blogspot.com%2f-kvtfDUZtSVI%2fUX_5lnCz-MI%2fAAAAAAAAAnM%2f_Kfo_PP_Js8%2fs1600%2fklu_logo.png&ehk=BE4uwD0J%2bMGbn8mwRs4cqzN37KJxpHM1QYDpX3OcJsc%3d&risl=&pid=ImgRaw&r=0" alt="My image" width="290" height="200"/>
+      <br><br>
+      <h1>Welcome to Shashank's Travel Tourism and Management</h1>
+    </div>
+
+    <div align="center" class="col">
+      <h1>Top Vacation Destinations</h1>
+      <br><br>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card border-primary border-4" style="width: 18rem;">
+            <img src="{%static 'images/chennai.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Explore Chennai</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card border-primary border-4" style="width: 18rem;">
+            <!-- Corrected image path -->
+            <img src="{% static 'images/delhi.jpg' %}" alt="Delhi Image">
+            <div class="card-body">
+              <p class="card-text">Explore Delhi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+<center>
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button type="button" class="btn btn-primary btn-lg">Explore More Travel Packages</button>
+  </div>
+</center>
+
+<br><br><br><br><br><br>
+{% endblock %}
+
+</html>
